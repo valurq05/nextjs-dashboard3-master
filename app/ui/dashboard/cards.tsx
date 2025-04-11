@@ -41,7 +41,6 @@ export function Card({
   type: 'invoices' | 'customers' | 'pending' | 'collected';
 }) {
   const Icon = iconMap[type];
-
   return (
     <div className="rounded-xl bg-gray-50 p-2 shadow-sm">
       <div className="flex p-4">
@@ -51,7 +50,7 @@ export function Card({
       <p
         className={`${lusitana.className}
           truncate rounded-xl bg-white px-4 py-8 text-center text-2xl`}
-      >
+>
         {value}
       </p>
     </div>
